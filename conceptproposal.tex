@@ -244,10 +244,55 @@ The Falcon~8X comes from a family of high-performance aircraft, and boasts desir
 
 The house of quality matrix in Figure~\ref{fig:hq}, produced with much modification and effort from~\cite{user121799:2019aa}, provides insights into which engineering challenges command the most focus.
 As stated in the RFP, the primary goal of the mission is to minimize the cost of payload delivery~\cite{Bradley:2023aa}, which will be primarily through minimizing production cost, and secondarily minimizing operating costs, where possible.
+There aren't that many explicit customer requirements in the RFP, besides functional ones, but the fact that it's a government based RFP indicates that they have a high priority on value, or at least, efficient use of resources.
+In other words, inexpensive and long-lasting.
+% TODO: more?
 
 \subsection{General Configuration}
+\begin{SCfigure}[0.2][h]
+	\centering
+	\includegraphics[width=.9\textwidth]{handsketch}
+	\caption{Hand-sketched 3-view}
+	\label{fig:sketch}
+\end{SCfigure}
 
+A hand-sketched 3-view of the STRATODUSTER is presented in Figure~\ref{fig:sketch}.
+The general design choices and justifications are laid out in the sections below.
+\subsubsection{Fuselage}
+\begin{compactenum}
+	\item \textbf{Conventional (Tubular) Fuselage} \\ Chosen for its simplicity and versatility.
+	\item \textbf{Cargo Door/Ramp} \\ At the rear, the cargo door/ramp will be located for ease of payload access.
+	\item \textbf{Cockpit} \\ The crew quarters are located at the front of the fuselage, with a standard roofed cabin.
+	\item \textbf{Retractable Tandem Landing Gear with Outriggers} \\ Depending on further analysis, may switch to retractable tricycle.
+\setcounter{enumine}{\value{enumi}}
+\end{compactenum}
 
+\subsubsection{Wings}
+\begin{compactenum}
+\setcounter{enumi}{\value{enumine}}
+	\item \textbf{Shoulder-wing} \\ Shoulder-wings are chosen for ground clearance and to keep the internals of the fuselage free from interruption.
+	\item \textbf{Monoplane} \\ No tangible benefits anticipated from any exotic wing configurations.
+	\item \textbf{Anhedral Cantilever} \\ Mainly inspired by the Boeing B-52 and B-47.
+	\item \textbf{Cruciform Tail} \\ If the payload is dispensed from anywhere other than the tail (like the wings), want to avoid sulfuric acid spray on tail.
+	\item \textbf{Cranked Trapezoidal Planform} \\ The aft sweep is inspired by the Boeing B-52, B-47, and many other high-altitude aircraft, and the cranked geometry is inspired by commercial Boeings and other business jets.
+	\item \textbf{Raked Wingtip} \\ Inspired by the Boeing 777 commercial transport aircraft, the Tip A generates the least lift-induced drag of the four wing styles~\cite{textbook}.
+\setcounter{enumine}{\value{enumi}}
+\end{compactenum}
+\subsubsection{Powerplant}
+\begin{compactenum}
+\setcounter{enumi}{\value{enumine}}
+	\item \textbf{Low BPR Turbofan or Turbojet} \\ At the required altitude and crusing speed, props would be ineffective.
+	\item \textbf{Quantity} \\ Quantity and configuration (how many engines per pylon) have not been fixed yet.
+	\item \textbf{Location} \\ Engines will be located in nacelles on the wings. They can't be located behind the point of payload dispersion, since it's presumably undesirable to have sulfuric acid enter the intakes.
+\end{compactenum}
+
+Specific physical dimensions of the aircraft have been intentionally omitted, as there are too many unknowns to fix any dimension yet.
+The general form, however, is generally fixed.
+Fuselage diameter may change, engine sizes and locations are unknown, wingspan is yet to be determined, along with tail configuration, and the rear of the plane needs work.
+Initial airfoil design will be based on the NACA airfoils used in the Boeing B-52 and B-47.
+The main driving forces here are that high-altitude aircraft generally need large wings to generate enough lift, and the multi-engine, under-wing configuration is quite standard for many commercial and transport aircraft.
+	
+	
 \section{Cost Analysis}
 \subsection{Production Costs}
 
